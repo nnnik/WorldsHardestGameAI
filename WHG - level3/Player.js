@@ -110,7 +110,7 @@ checkCollisions() {
       }
     }
     if (this.deathByDot) {
-      estimatedDistance *= 0.9;
+      estimatedDistance *= 1.1; //doesn't the 0.9 here reward them for suicidal behavior?
     }
     this.fitness = 1.0/(estimatedDistance * estimatedDistance);
   }
